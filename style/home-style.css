@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200&family=Passions+Conflict&display=swap');
+
+*{
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../item/image1.png"), url(../item/bg.png), linear-gradient(rgba(255, 255, 255, 0.086),rgba(167, 119, 17, 0.233));    
+    background-size: cover;
+    background-position: center;
+}
+.nav-container{
+    width: 100%;
+    background-color: rgb(119, 84, 14);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.347);
+}
+.navbar{
+    width: 85%;
+    height: 50px;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-family: 'Passions Conflict', cursive;
+    font-size: 70px;
+    color: white;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.card-body{
+    margin-left: 63%;
+    width: 400px;
+    height: 420px;
+    border: solid 2px;
+    border-radius: 20px;
+    border-color: rgb(106, 68, 6);
+    background-color: rgba(149, 96, 26, 0.355);
+}
+.form-title{
+    margin-top: 20px;
+    margin-left: 24%;
+    margin-bottom: 20px;
+    height: fit-content;
+}
+.form-input{
+    width: 320px;
+    height: 25px;
+    padding: 10px 20px;
+    border: 1px;
+    border-radius: 20px;
+    background-color: rgb(250, 223, 192);
+}
+.button{
+    width: 80px;
+    border: 1px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(125, 87, 43);
+    color: white;
+}
+.button a{
+    color: white;
+}
+.form{
+    text-align: center;
+}
+.form-label{
+    font-family: 'Passions Conflict', cursive;
+    font-size: 30px;
+}
+
+/* FEEDBACK */
+#feedback{
+    display: flex;
+    justify-content: baseline;
+    background-color: rgb(255, 241, 224);
+    padding-top: 100px;
+}
+.komentar{
+    margin: 20px;
+    margin-left: 8%;
+}
+.komentar p{
+    font-family: 'Passions Conflict', cursive;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.komentar .button{
+    margin-left: 35%;
+}
+.message{
+    border: solid rgb(106, 68, 6);
+    border-radius: 20px;
+    background-color: rgb(250, 234, 192);
+    padding: 20px;
+    margin-bottom: 5%;
+}
+#feedback img{
+    margin: 0% 5% 0% 35%;
+    bottom: 0;
+}
+
+/* ABOUT */
+#about{
+    background-color: rgb(119, 84, 14);
+    color: white;
+    height: 430px;
+    padding: 0px 50px;
+}
+.address{
+    margin: 0% 5%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info{
+    margin-right: 50%;
+}
+.info p{
+    margin-bottom: 20px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+}

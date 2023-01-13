@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200&family=Passions+Conflict&display=swap');
+
+:root{
+    --bg-black-900:#cfc092;
+    --bg-black-100:#f9f0dc;
+    --bg-black-50:#a09b8d;
+    --bg-blue-100:rgba(220, 142, 7, 0.471);
+    --text-black-900:#392c1d;
+    --text-black-700:#705f4e;
+    --after-content:'2';
+}
+body{ 
+    line-height: 1.5;
+    font-size: 16; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+::before, ::after{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.section{
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block; 
+    /* display an element as a block element. it starts on a new line, and takes up the whole width */
+    padding: 0 30px;
+    opacity: 1;
+}
+.main-content{
+    padding-left: 270px;
+}
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    margin-left: 20px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+.title{
+    margin: 20px 10px;
+    width: 100%;
+}
+.title hr{
+    border-bottom: solid  var(--text-black-900);
+}
+
+/* ASIDE */
+.aside{
+    width: 270px;
+    background: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 30px;
+    height: 100%;
+    border-right: solid var(--text-black-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.297);
+}
+.aside .logo{
+    position: absolute;
+    top: 50px;
+    font-size: 60px;
+    font-family: 'Passions Conflict', cursive;
+    text-transform: capitalize ;
+}
+.aside .logo a{
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+}
+.aside .logo a span{
+    font-family: 'Clicker Script', cursive;
+    font-size: 40px;
+}
+/* detail elbow in the logo */
+.aside .logo a::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 0;
+    left: 0;
+}
+.aside .logo a::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+    right: 0;
+}
+.aside .nav-toggler{
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.aside .nav-toggler span{
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
+}
+.aside .nav-toggler span::before{
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+.aside .nav-toggler span::after{
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+.aside .nav{
+    margin-top: 50px;
+}
+/* line spacing navbar */
+.aside .nav li{
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+.aside .nav li a{
+    font-size: 40px;
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid var(--bg-black-50);
+    color: var(--text-black-900);
+    padding: 5px 15px;
+    font-family: 'Passions Conflict', cursive;
+}
+.aside .nav li a i{
+    margin-right: 15px;
+}
+
+/* MENU */
+.box{
+    width: 240px;
+    height: 370px;
+    background-color: var(--bg-black-100);
+    border: solid var(--text-black-900);
+    border-radius: 20px;
+    padding: 10px 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.297);
+    color: var(--text-black-700);
+}
+.box img{
+    width: 180px;
+}
+.box .detail h3{
+    font-family: 'Passions Conflict';
+    font-size: 28px;
+    color: var(--text-black-900);
+}
+.box .detail p{
+    font-size: 10px;
+}
+.box .detail .price{
+    font-size: 18px;
+}
+.box .detail .add-to-cart{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 35px;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    margin: 10px 15px;
+    color: var(--bg-black-100);
+    background: var(--text-black-700);
+    border: 0;
+}
+.add-to-cart:hover{
+    transform: scale(1.05);
+}
+.daftar-menu li{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 18px;
+}
+
+/* CART BOX */
+.bottom{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 12vh;
+    /* background-color: rgba(255, 0, 0, 0.326); */
+}
+.cart-icon{
+    text-align: right;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+.cart-box{
+    width: 26%;
+    position: absolute;
+    left: 72%;
+    bottom: 25%;
+}
+.cart-box h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 10px;
+    font-family: 'Passions Conflict', cursive;
+}
+.cart-wrapper{
+    overflow-y: auto;
+    max-height: 350px;
+}
+.subtotal{
+    text-align: right;
+    padding: 5%;
+}
+.order, .view-cart{
+    width: 95%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: var(--text-black-900);
+    font-size: large;
+    color: white;
+    margin: 10px auto;
+    padding: 10px 15px;
+}
+.order a{
+    color: var(--bg-black-100);
+}
+.view-cart{
+    background-color: var(--bg-black-100);
+    border: solid 2px var(--text-black-900);
+    color: var(--text-black-900); 
+}
+.cart-item{
+    display: grid;
+    grid-template-columns: 3fr 6fr 1fr;
+    padding: 5% 2%;
+    border-bottom: solid 1px var(--bg-black-50);
+}
+.cart-item img{
+    width: 100%;
+}
+.cart-item .details{
+    padding-left: 10%;
+} 
+.cart-item h3{
+    text-align: left;
+    margin-bottom: 3%;
+}
+.cart-item .price{
+    display: block;
+    text-align: right;
+    margin-top: 5%;
+}
+.quantity{
+    display: block;
+    margin-top: 5%;
+}
+.cancel{
+    width: 70%;
+}
+.whole-cart-window{
+    border: solid 2px var(--bg-black-50);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.297);
+    position: fixed;
+    bottom: 12vh;
+    background: var(--bg-black-100);
+    margin-right: 2%;
+}
+.hide{
+    display: none;
+}
+.non-empty::after{
+    content: var(--after-content);
+    padding: 0% 4%;
+    font-size: 20px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: var(--text-black-700);
+    color: var(--bg-black-100);
+    border-radius: 50%;
+    position: relative;
+    top: -20px;
+    right: 5%;
+
+}
